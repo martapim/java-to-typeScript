@@ -1,0 +1,28 @@
+class Playground {
+    //funçao principal para executar alguma coisa
+    public static void main(String[ ] args) {
+        System.out.println(“Hello Java”);
+        //instanciando um classe para ser utilizada
+        Estudante estudade = new Estudante();
+        //chamando uma funcao que ta na classe
+        estudade.setIdade(9);
+        //imprindo algum resultado
+        System.out.println(“A idade do estudante é: ” + estudante.getIdade());
+    }
+}
+//classe - representacao de algo do mundo real (no caso um estudante)
+public class Estudante {
+    //atributos da minha classe
+    private int idade; //primário
+    private String nome;
+    public String sobrenome;
+    // encapsulamento
+    //método de acesso ao atributo
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+}
+
